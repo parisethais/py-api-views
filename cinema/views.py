@@ -1,13 +1,23 @@
 from django.shortcuts import get_object_or_404
-from rest_framework import generics, mixins, status, viewsets
+from rest_framework import (
+    generics,
+    mixins,
+    status,
+    viewsets,
+)
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from .models import Actor, Genre, CinemaHall, Movie
+from .models import (
+    Actor,
+    CinemaHall,
+    Genre,
+    Movie,
+)
 from .serializers import (
     ActorSerializer,
-    GenreSerializer,
     CinemaHallSerializer,
+    GenreSerializer,
     MovieSerializer,
 )
 
